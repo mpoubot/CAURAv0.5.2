@@ -1,0 +1,35 @@
+    g["atr14"] = tr.ewm(alpha=1 / ATR_PERIOD_1H, adjust=False, min_periods=ATR_PERIOD_1H).mean()
+    g["atr_pct"] = 100.0 * g["atr14"] / g["close"]
+
+    # Bar-2 is deliberately frozen as the two-hour close-to-close return.
+    g["bar2_return_pct"] = 100.0 * (g["close"] / g["close"].shift(2) - 1.0)
+
+    return g.reset_index(drop=True)
+
+
+def btc_4h_context(btc: pd.DataFrame) -> pd.DataFrame:
+    if btc.empty:
+        return btc
+
+    # Defensive timestamp normalization: resample requires a DatetimeIndex.
+    btc = btc.copy()
+    btc["timestamp"] = pd.to_datetime(
+        btc["timestamp"], utc=True, errors="coerce"
+    )
+    btc = btc.dropna(subset=["timestamp"])
+
+    x = btc.set_index("timestamp").sort_index()
+
+    # Explicitly guarantee a DatetimeIndex before resampling.
+    if not isinstance(x.index, pd.DatetimeIndex):
+        die("BTC 4H context: timestamp index is not a DatetimeIndex.")
+
+    h4 = x["close"].resample("4h", label="right", closed="right").last().dropna()
+    ema = h4.ewm(span=EMA_PERIOD_4H, adjust=False, min_periods=EMA_PERIOD_4H).mean()
+
+    ctx = pd.DataFrame({"btc_4h_close": h4, "btc_4h_ema50": ema})
+    ctx["btc_4h_regime"] = "UNKNOWN"
+    ctx.loc[ctx["btc_4h_close"] < ctx["btc_4h_ema50"], "btc_4h_regime"] = "BEAR"
+    ctx.loc[ctx["btc_4h_close"] >= ctx["btc_4h_ema50"], "btc_4h_regime"] = "BULL"
+
+    return ctx

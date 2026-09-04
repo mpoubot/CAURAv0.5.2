@@ -1,0 +1,36 @@
+{
+  "fixture_version": "AURA v0.5.3.19 TEST FIXTURE",
+  "purpose": "Deterministic supervisor health test. No market data and no orders.",
+  "components": {
+    "market_state": {
+      "market_state_healthy": true,
+      "agent_version": "AURA v0.5.3.12"
+    },
+    "signal_decision": {
+      "signal_state_healthy": true,
+      "agent_version": "AURA v0.5.3.13"
+    },
+    "risk_gate": {
+      "risk_gate_healthy": true,
+      "agent_version": "AURA v0.5.3.14"
+    },
+    "position_state": {
+      "position_state_healthy": true,
+      "agent_version": "AURA v0.5.3.15"
+    },
+    "paper_execution": {
+      "execution_state_healthy": true,
+      "agent_version": "AURA v0.5.3.16"
+    },
+    "ledger": {
+      "ledger_healthy": true,
+      "agent_version": "AURA v0.5.3.17"
+    },
+    "kill_switch": {
+      "execution_permitted": false,
+      "orders_allowed": false,
+      "live_execution": false,
+      "agent_version": "AURA v0.5.3.18"
+    }
+  }
+}

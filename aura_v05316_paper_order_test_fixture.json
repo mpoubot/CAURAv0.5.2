@@ -1,0 +1,10 @@
+{
+  "symbol": "BTC/USD",
+  "action": "ENTRY_INTENT",
+  "execution_intent": "ENTRY_INTENT",
+  "side": "BUY",
+  "quantity": 0.01,
+  "reference_price": 100000.0,
+  "signal_timestamp": "2026-08-28T12:00:00Z",
+  "idempotency_key": "BTC/USD|2026-08-28T12:00:00Z|AURA v0.5.3.15"
+}

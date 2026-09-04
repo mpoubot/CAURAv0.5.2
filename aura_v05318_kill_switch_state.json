@@ -1,0 +1,24 @@
+{
+  "schema_version": "AURA-KS-1",
+  "aura_version": "0.5.3.18",
+  "component": "KILL_SWITCH_RECOVERY",
+  "state": "RUNNING",
+  "kill_switch": false,
+  "halt_reason": null,
+  "halted_at": "2026-08-28T14:05:48Z",
+  "recovery_requested_at": "2026-08-28T14:22:00Z",
+  "recovered_at": "2026-08-28T14:22:00Z",
+  "last_transition": {
+    "event": "RECOVERED",
+    "timestamp": "2026-08-28T14:22:00Z",
+    "reason": "ALL_RECOVERY_CHECKS_PASSED"
+  },
+  "execution_barrier": {
+    "orders_allowed": false,
+    "paper_execution": false,
+    "live_execution": false,
+    "execution_permitted": false
+  },
+  "execution_blocked": true,
+  "state_hash": "7dffb0d1d2f04b9cdbbe6c0c20946ec41d7262133d50f5f70a8a0328c0199bc9"
+}

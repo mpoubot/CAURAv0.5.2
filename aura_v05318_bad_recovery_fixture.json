@@ -1,0 +1,9 @@
+{
+  "market_state_healthy": true,
+  "signal_state_healthy": true,
+  "risk_gate_healthy": false,
+  "position_state_healthy": true,
+  "execution_state_healthy": true,
+  "ledger_healthy": true,
+  "no_unresolved_execution": true
+}

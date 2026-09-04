@@ -1,0 +1,407 @@
+﻿===== v0.5.3.12 MARKET STATE =====
+
+{
+  "agent_version": "AURA v0.5.3.12",
+  "engine": "MARKET_STATE_ENGINE",
+  "generated_at": "2026-08-27T21:25:41.848137Z",
+  "requested_symbol": null,
+  "data_status": "VALID",
+  "market_state_valid": true,
+  "state_id": "MS-eba1efc0bef4781371e33fe5",
+  "state_hash": "8564a0043fb49cb57bc5948b06a96a6ef4c9e1fa645cf921eb47d215fc2a6aee",
+  "invalid_reasons": [],
+  "frozen_configuration": {
+    "candidate": "BEAR x LOW ATR x POSITIVE bar-2",
+    "atr_threshold_pct": 0.596,
+    "ema_period_4h": 50,
+    "atr_period_1h": 14,
+    "bar_2_lag_hours": 2
+  },
+  "guardrails": {
+    "single_source_of_truth": true,
+    "no_recalculation_downstream": true,
+    "lookahead_allowed": false,
+    "missing_data_policy": "FAIL_CLOSED",
+    "interpolation_allowed": false,
+    "forward_fill_allowed": false,
+    "orders_allowed": false,
+    "paper_execution": false,
+    "live_execution": false,
+    "strategy_changed": false,
+    "parameters_changed": false
+  },
+  "provenance": {
+    "input_file": "C:\\CAURAv0.5.2\\data\\prospective_alpaca\\alpaca_1h_closed_bars.csv",
+    "input_sha256": "99bc34fabdef7026b2d4c4c8630dec42d862d2f53597ce404e68ed3d8d582a38",
+    "calculation_engine": "AURA v0.5.3.12"
+  },
+  "symbols": {
+    "BTC/USD": {
+      "data_status": "VALID",
+      "market_state_valid": true,
+      "invalid_reasons": [],
+      "market_state": {
+        "timestamp": "2026-08-27T20:00:00Z",
+        "symbol": "BTC/USD",
+        "close": 80117.15,
+        "atr14": 539.9554420861818,
+        "atr14_pct": 0.6739573762748449,
+        "atr_regime": "HIGH_OR_EQUAL",
+        "ema50_4h": 76273.82647988808,
+        "ema50_4h_timestamp": "2026-08-27T20:00:00Z",
+        "trend_regime": "BULL_OR_NEUTRAL",
+        "bar_2_return_pct": -0.06576659873800406,
+        "bar_2_regime": "NON_POSITIVE",
+        "regime_state": "BULL_OR_NEUTRAL x HIGH_OR_EQUAL x NON_POSITIVE",
+        "frozen_candidate_match": false,
+        "source_1h_bars": 225,
+        "source_4h_complete_bars": 56,
+        "latest_4h_underlying_1h_count": 4,
+        "latest_4h_underlying_1h_first": "2026-08-27T17:00:00Z",
+        "latest_4h_underlying_1h_last": "2026-08-27T20:00:00Z"
+      }
+    },
+    "ETH/USD": {
+      "data_status": "VALID",
+      "market_state_valid": true,
+      "invalid_reasons": [],
+      "market_state": {
+        "timestamp": "2026-08-27T20:00:00Z",
+        "symbol": "ETH/USD",
+        "close": 2508.555,
+        "atr14": 20.860902192005778,
+        "atr14_pct": 0.8315903853814558,
+        "atr_regime": "HIGH_OR_EQUAL",
+        "ema50_4h": 2382.3991776723656,
+        "ema50_4h_timestamp": "2026-08-27T20:00:00Z",
+        "trend_regime": "BULL_OR_NEUTRAL",
+        "bar_2_return_pct": 0.06601779089712156,
+        "bar_2_regime": "POSITIVE",
+        "regime_state": "BULL_OR_NEUTRAL x HIGH_OR_EQUAL x POSITIVE",
+        "frozen_candidate_match": false,
+        "source_1h_bars": 225,
+        "source_4h_complete_bars": 56,
+        "latest_4h_underlying_1h_count": 4,
+        "latest_4h_underlying_1h_first": "2026-08-27T17:00:00Z",
+        "latest_4h_underlying_1h_last": "2026-08-27T20:00:00Z"
+      }
+    }
+  },
+  "canonical_state": {
+    "agent_version": "AURA v0.5.3.12",
+    "engine": "MARKET_STATE_ENGINE",
+    "generated_at": "2026-08-27T21:25:41.848137Z",
+    "symbols": {
+      "BTC/USD": {
+        "timestamp": "2026-08-27T20:00:00Z",
+        "symbol": "BTC/USD",
+        "close": 80117.15,
+        "atr14": 539.9554420861818,
+        "atr14_pct": 0.6739573762748449,
+        "atr_regime": "HIGH_OR_EQUAL",
+        "ema50_4h": 76273.82647988808,
+        "ema50_4h_timestamp": "2026-08-27T20:00:00Z",
+        "trend_regime": "BULL_OR_NEUTRAL",
+        "bar_2_return_pct": -0.06576659873800406,
+        "bar_2_regime": "NON_POSITIVE",
+        "regime_state": "BULL_OR_NEUTRAL x HIGH_OR_EQUAL x NON_POSITIVE",
+        "frozen_candidate_match": false,
+        "source_1h_bars": 225,
+        "source_4h_complete_bars": 56,
+        "latest_4h_underlying_1h_count": 4,
+        "latest_4h_underlying_1h_first": "2026-08-27T17:00:00Z",
+        "latest_4h_underlying_1h_last": "2026-08-27T20:00:00Z"
+      },
+      "ETH/USD": {
+        "timestamp": "2026-08-27T20:00:00Z",
+        "symbol": "ETH/USD",
+        "close": 2508.555,
+        "atr14": 20.860902192005778,
+        "atr14_pct": 0.8315903853814558,
+        "atr_regime": "HIGH_OR_EQUAL",
+        "ema50_4h": 2382.3991776723656,
+        "ema50_4h_timestamp": "2026-08-27T20:00:00Z",
+        "trend_regime": "BULL_OR_NEUTRAL",
+        "bar_2_return_pct": 0.06601779089712156,
+        "bar_2_regime": "POSITIVE",
+        "regime_state": "BULL_OR_NEUTRAL x HIGH_OR_EQUAL x POSITIVE",
+        "frozen_candidate_match": false,
+        "source_1h_bars": 225,
+        "source_4h_complete_bars": 56,
+        "latest_4h_underlying_1h_count": 4,
+        "latest_4h_underlying_1h_first": "2026-08-27T17:00:00Z",
+        "latest_4h_underlying_1h_last": "2026-08-27T20:00:00Z"
+      }
+    },
+    "frozen_configuration": {
+      "candidate": "BEAR x LOW ATR x POSITIVE bar-2",
+      "atr_threshold_pct": 0.596,
+      "ema_period_4h": 50,
+      "atr_period_1h": 14,
+      "bar_2_lag_hours": 2
+    }
+  }
+}
+
+===== v0.5.3.13 SIGNAL DECISION =====
+
+{
+  "agent_version": "AURA v0.5.3.13",
+  "engine": "SIGNAL_DECISION_ENGINE",
+  "decision_status": "BLOCKED",
+  "overall_decision": "BLOCKED",
+  "generated_from": "C:\\CAURAv0.5.2\\regime_output\\market_state\\market_state_snapshot.json",
+  "input_state_id": "MS-eba1efc0bef4781371e33fe5",
+  "input_state_hash": "8564a0043fb49cb57bc5948b06a96a6ef4c9e1fa645cf921eb47d215fc2a6aee",
+  "input_state_hash_verified": false,
+  "frozen_configuration_verified": true,
+  "invalid_reasons": [
+    "MISSING_MARKET_STATE:BTC/USD",
+    "MISSING_MARKET_STATE:ETH/USD"
+  ],
+  "decisions": {},
+  "guardrails": {
+    "single_source_of_truth": true,
+    "source_engine": "AURA v0.5.3.12",
+    "indicator_recalculation": false,
+    "market_data_fetch": false,
+    "lookahead_allowed": false,
+    "orders_allowed": false,
+    "paper_execution": false,
+    "live_execution": false,
+    "strategy_changed": false,
+    "parameters_changed": false,
+    "fail_closed": true
+  }
+}
+
+===== v0.5.3.14 RISK GATE =====
+
+{
+  "agent_version": "AURA v0.5.3.14",
+  "engine": "RISK_GATE",
+  "decision_status": "BLOCKED",
+  "overall_risk_decision": "BLOCKED",
+  "risk_authorized": false,
+  "execution_permitted": false,
+  "generated_from": "C:\\CAURAv0.5.2\\regime_output\\signal_decision\\signal_decision.json",
+  "input_decision_hash": "7f6a9959b44aa163a084efad0e3d819d05e64ab2315849d1fd502620af7eaa07",
+  "input_decision_hash_verified": false,
+  "upstream_state_id": "MS-eba1efc0bef4781371e33fe5",
+  "upstream_state_hash_verified": false,
+  "frozen_configuration_verified": true,
+  "risk_checks": {
+    "upstream_integrity": {
+      "passed": false,
+      "reasons": [
+        "UPSTREAM_STATE_HASH_NOT_VERIFIED"
+      ]
+    },
+    "required_symbols": {
+      "passed": false,
+      "reasons": [
+        "MISSING_REQUIRED_SYMBOL:BTC/USD",
+        "MISSING_REQUIRED_SYMBOL:ETH/USD"
+      ]
+    },
+    "timestamp_synchronization": {
+      "passed": false,
+      "canonical_timestamp": null,
+      "reasons": [
+        "INVALID_SYMBOL_DECISION:BTC/USD",
+        "INVALID_SYMBOL_DECISION:ETH/USD"
+      ]
+    },
+    "candidate_consistency": {
+      "passed": false,
+      "reasons": [
+        "INVALID_SYMBOL_DECISION:BTC/USD",
+        "INVALID_SYMBOL_DECISION:ETH/USD"
+      ]
+    },
+    "execution_disabled": {
+      "passed": true,
+      "orders_allowed": false,
+      "paper_execution": false,
+      "live_execution": false
+    }
+  },
+  "decisions": {
+    "BTC/USD": {
+      "symbol": "BTC/USD",
+      "upstream_decision": null,
+      "risk_decision": "BLOCKED",
+      "risk_authorized": false,
+      "reason": "MISSING_UPSTREAM_DECISION"
+    },
+    "ETH/USD": {
+      "symbol": "ETH/USD",
+      "upstream_decision": null,
+      "risk_decision": "BLOCKED",
+      "risk_authorized": false,
+      "reason": "MISSING_UPSTREAM_DECISION"
+    }
+  },
+  "blocked_reasons": [
+    "INVALID_SYMBOL_DECISION:BTC/USD",
+    "INVALID_SYMBOL_DECISION:ETH/USD",
+    "MISSING_REQUIRED_SYMBOL:BTC/USD",
+    "MISSING_REQUIRED_SYMBOL:ETH/USD",
+    "UPSTREAM_STATE_HASH_NOT_VERIFIED"
+  ],
+  "guardrails": {
+    "single_source_of_truth": true,
+    "source_engine": "AURA v0.5.3.13",
+    "indicator_recalculation": false,
+    "market_data_fetch": false,
+    "signal_recalculation": false,
+    "position_sizing": false,
+    "position_creation": false,
+    "orders_allowed": false,
+    "paper_execution": false,
+    "live_execution": false,
+    "fail_closed": true
+  }
+}
+
+===== v0.5.3.15 POSITION STATE =====
+
+{
+  "agent_version": "AURA v0.5.3.15",
+  "engine": "POSITION_STATE_MANAGER",
+  "state_version": 1,
+  "generated_at": "2026-08-27T21:57:07Z",
+  "decision_status": "DECIDED",
+  "overall_action": "NO_ACTION",
+  "execution_permitted": false,
+  "orders_allowed": false,
+  "paper_execution": false,
+  "live_execution": false,
+  "source_engine": "AURA v0.5.3.14",
+  "source_input": "C:\\CAURAv0.5.2\\regime_output\\risk_gate\\risk_gate.json",
+  "input_risk_gate_hash": "56d4b539c3af26403de67df4a08a139d33e9aed33db635417ec85355d8b17544",
+  "state_hash": "037a96987398b219a81b99917e8f23894844c92e32fc5dc628d42d0e2fb62219",
+  "idempotency": {
+    "enabled": true,
+    "key_format": "symbol + signal_timestamp + strategy_version",
+    "duplicate_action": "NO_NEW_ENTRY"
+  },
+  "guardrails": {
+    "single_source_of_truth_upstream": true,
+    "risk_gate_required": true,
+    "position_creation": false,
+    "position_sizing": false,
+    "order_submission": false,
+    "market_data_fetch": false,
+    "indicator_recalculation": false,
+    "paper_execution": false,
+    "live_execution": false,
+    "fail_closed": true
+  },
+  "positions": {
+    "BTC/USD": {
+      "symbol": "BTC/USD",
+      "position_state": "FLAT",
+      "position_quantity": null,
+      "average_entry_price": null,
+      "entry_timestamp": null,
+      "exit_timestamp": null,
+      "active_order_id": null,
+      "active_idempotency_key": null,
+      "last_signal_timestamp": null,
+      "last_risk_decision": "BLOCKED",
+      "last_transition": "INITIALIZED",
+      "last_transition_reason": "NO_PRIOR_STATE",
+      "last_update_timestamp": "2026-08-27T21:57:07Z",
+      "reconciliation_status": "NOT_AVAILABLE",
+      "reconciliation_reason": "NO_BROKER_SNAPSHOT_SUPPLIED"
+    },
+    "ETH/USD": {
+      "symbol": "ETH/USD",
+      "position_state": "FLAT",
+      "position_quantity": null,
+      "average_entry_price": null,
+      "entry_timestamp": null,
+      "exit_timestamp": null,
+      "active_order_id": null,
+      "active_idempotency_key": null,
+      "last_signal_timestamp": null,
+      "last_risk_decision": "BLOCKED",
+      "last_transition": "INITIALIZED",
+      "last_transition_reason": "NO_PRIOR_STATE",
+      "last_update_timestamp": "2026-08-27T21:57:07Z",
+      "reconciliation_status": "NOT_AVAILABLE",
+      "reconciliation_reason": "NO_BROKER_SNAPSHOT_SUPPLIED"
+    }
+  },
+  "decisions": {
+    "BTC/USD": {
+      "symbol": "BTC/USD",
+      "upstream_risk_decision": "BLOCKED",
+      "position_state": "FLAT",
+      "previous_position_state": "FLAT",
+      "action": "NO_ACTION",
+      "transition_allowed": false,
+      "duplicate_signal": false,
+      "idempotency_key": null,
+      "reconciliation_status": "NOT_AVAILABLE",
+      "reason": "UPSTREAM_RISK_BLOCKED_OR_UNEXPECTED"
+    },
+    "ETH/USD": {
+      "symbol": "ETH/USD",
+      "upstream_risk_decision": "BLOCKED",
+      "position_state": "FLAT",
+      "previous_position_state": "FLAT",
+      "action": "NO_ACTION",
+      "transition_allowed": false,
+      "duplicate_signal": false,
+      "idempotency_key": null,
+      "reconciliation_status": "NOT_AVAILABLE",
+      "reason": "UPSTREAM_RISK_BLOCKED_OR_UNEXPECTED"
+    }
+  },
+  "blocked_reasons": [],
+  "transition_events": []
+}
+
+===== v0.5.3.16 PAPER EXECUTION =====
+
+{
+  "agent_version": "AURA v0.5.3.16",
+  "engine": "PAPER_EXECUTION_ADAPTER",
+  "state_version": 1,
+  "generated_at": "2026-08-27T22:20:11Z",
+  "decision_status": "NO_EXECUTION",
+  "overall_action": "NO_ACTION",
+  "paper_execution": true,
+  "orders_allowed": false,
+  "real_order_submission": false,
+  "live_execution": false,
+  "source_engine": "AURA v0.5.3.15",
+  "source_input": "C:\\CAURAv0.5.2\\regime_output\\position_state\\position_state.json",
+  "input_state_hash": "b10278aacd0cc1c7a32b2178538c3dbca9d3cd88e4bacbd6a3ef6355a9f3f107",
+  "execution_model": {
+    "fill_mode": "FULL",
+    "spread_bps": 0.0,
+    "slippage_bps": 0.0,
+    "fee_bps": 0.0,
+    "latency_ms": 0
+  },
+  "guardrails": {
+    "single_source_of_truth_upstream": true,
+    "position_state_manager_required": true,
+    "signal_creation": false,
+    "risk_decision": false,
+    "position_sizing": false,
+    "market_data_fetch": false,
+    "indicator_recalculation": false,
+    "real_order_submission": false,
+    "live_execution": false,
+    "fail_closed": true,
+    "deterministic_fill_model": true
+  },
+  "orders": [],
+  "execution_events": [],
+  "blocked_reasons": [],
+  "result_hash": "13d842fe35592b5b86b3b0aa13532faaaac305ed1ac74c7650d3feecde9e0d2c"
+}
